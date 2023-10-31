@@ -42,7 +42,7 @@ namespace SistemaGestionUI
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             //Solo hacemos eso.
-            VentaData.EliminarVenta(_venta);
+            VentaData.EliminarVenta(_venta.Id);
             MessageBox.Show("Se elimino correctamente");
             this.Close();
 

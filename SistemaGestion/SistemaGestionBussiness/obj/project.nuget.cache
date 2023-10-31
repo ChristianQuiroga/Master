@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0RWbTHc4IuwxcNffn1uFzL9+f3COnjiINZyrJz/T0cDzTK1Gtm2M+MDPjpc5q4dMvJclii9mOFEsxO6tmy2C5g==",
+  "dgSpecHash": "FSWA+QTtKN/JvOwqmsVcX6XxAQQOJ9X35mTuid6uLGya+95hhJ3rt9jEu2rWy7miHP/1RzpyB6nJyG1AD9i4Ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj",
+  "projectFilePath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\christian.quiroga\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\christian.quiroga\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

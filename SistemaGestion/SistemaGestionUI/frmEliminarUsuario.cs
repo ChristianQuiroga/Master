@@ -44,7 +44,7 @@ namespace SistemaGestionUI
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             //Solo hacemos eso.
-            UsuarioData.EliminarUsuario(_usuario);
+            UsuarioData.EliminarUsuario(_usuario.Id);
             MessageBox.Show("Se grabo correctamente");
 
             this.Close();

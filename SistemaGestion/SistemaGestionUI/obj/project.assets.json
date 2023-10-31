@@ -529,11 +529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionUI\\SistemaGestionUI.csproj",
+      "projectUniqueName": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionUI\\SistemaGestionUI.csproj",
       "projectName": "SistemaGestionUI",
-      "projectPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionUI\\SistemaGestionUI.csproj",
+      "projectPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionUI\\SistemaGestionUI.csproj",
       "packagesPath": "C:\\Users\\christian.quiroga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionUI\\obj\\",
+      "outputPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\christian.quiroga\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -550,11 +550,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj": {
-              "projectPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj"
+            "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj": {
+              "projectPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj"
             },
-            "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
-              "projectPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
+            "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+              "projectPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
             }
           }
         }

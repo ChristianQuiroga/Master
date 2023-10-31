@@ -41,7 +41,7 @@ namespace SistemaGestionUI
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             //Solo hacemos eso.
-            ProductoVendidoData.EliminarProductoVendido(_productoVendido);
+            ProductoVendidoData.EliminarProductoVendido(_productoVendido.Id);
             MessageBox.Show("Se elimino correctamente");
             this.Close();
 
