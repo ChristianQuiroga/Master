@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eMBuoriKW2z8bXjo6dlsShVNHVieU/mHmL2cz7MIbZQIleT1xrJOvc/M9LjcM1oM5wSplhax3eYKDuwA5e6S0A==",
+  "dgSpecHash": "vrlqqsHXPB/vL3w0j+vMb5rVHnqxGbqM5vmHEELlCiQ2tjpWiLi/naXqy/XiY30Tmic27tr7p4iXYfo4YQhbRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionWebApi\\SistemaGestionWebApi.csproj",
+  "projectFilePath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionWebApi\\SistemaGestionWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\christian.quiroga\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\christian.quiroga\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

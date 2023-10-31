@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
+      "projectUniqueName": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
       "projectName": "SistemaGestionEntities",
-      "projectPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
+      "projectPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
       "packagesPath": "C:\\Users\\christian.quiroga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\_mi_pimer_repositorio\\SistemaGestion\\SistemaGestionEntities\\obj\\",
+      "outputPath": "C:\\Users\\christian.quiroga\\OneDrive - WiseTech Global Pty Ltd\\Documents\\GitHub\\Master\\SistemaGestion\\SistemaGestionEntities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\christian.quiroga\\AppData\\Roaming\\NuGet\\NuGet.Config",
