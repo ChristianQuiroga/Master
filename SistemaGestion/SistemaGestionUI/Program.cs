@@ -12,10 +12,7 @@ namespace SistemaGestionUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new frmMenu());
-            Application.Run(new frmDgUsuarios());
-            Application.Run(new frmDgProductos());
-            Application.Run(new frmDgVenta());
-            Application.Run(new frmDgProductoVendido());
+
         }
     }
 }

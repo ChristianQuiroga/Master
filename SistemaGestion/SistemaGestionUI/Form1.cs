@@ -29,7 +29,35 @@ namespace SistemaGestionUI
 
         private void listarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmDgUsuarios frm = new frmDgUsuarios();
+            frm.MdiParent = this;
+            frm.Show();
+        }
 
+        private void listarProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDgProductos frm = new frmDgProductos();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void listarVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDgVenta frm = new frmDgVenta();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void productoVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDgProductoVendido frm = new frmDgProductoVendido();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
