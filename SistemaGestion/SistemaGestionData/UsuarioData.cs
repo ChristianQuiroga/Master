@@ -67,37 +67,36 @@ namespace SistemaGestionData
         #region Trear Nombre
         public static List<Usuario> TraerNombre(string user, string password)
         {
+
             List<Usuario> listaNombre = new List<Usuario>();
             Usuario usuario = new Usuario();
-
-            string query = "Select Nombre, apellido, mail From Usuario Where NombreUsuario = '@user' AND Contraseña = '@password'"; 
+            string query = "Select Nombre From Usuario " +
+                            "Where NombreUsuario = @user COLLATE SQL_Latin1_General_CP1_CS_AS " +
+                            "AND Contraseña = @password COLLATE SQL_Latin1_General_CP1_CS_AS";
 
             try
             {
                 using (SqlConnection conexion = new SqlConnection(connectionString))
                 {
                     conexion.Open();
-                    using(SqlCommand comando = new SqlCommand(query, conexion))
+                    using (SqlCommand comando = new SqlCommand(query, conexion))
                     {
-                        ////comando.Parameters.Add(new SqlParameter("Id", SqlDbType.Int) { Value = Id });
-                        comando.Parameters.Add(new SqlParameter("NombreUsuario", SqlDbType.VarChar) { Value = user });
-                        comando.Parameters.Add(new SqlParameter("Contraseña", SqlDbType.VarChar) { Value = password });
-                        //comando.Parameters.AddWithValue("nombreusuario", user);
-                        //comando.Parameters.AddWithValue("contraseña", password);
+                        comando.Parameters.Add(new SqlParameter("user", SqlDbType.VarChar) { Value = user });
+                        comando.Parameters.Add(new SqlParameter("password", SqlDbType.VarChar) { Value = password });
+                        //comando.Parameters.AddWithValue("@Usuario", user);
+                        //comando.Parameters.AddWithValue("@Password", password);
 
-                        using(SqlDataReader dr = comando.ExecuteReader())
-                        //comando.ExecuteScalar();
+                        using (SqlDataReader dr = comando.ExecuteReader())
                         {
+
+
                             if (dr.HasRows)
                             {
                                 while (dr.Read())
                                 {
                                     //usuario.Id = Convert.ToInt32(dr["Id"]);
                                     usuario.Nombre = dr["Nombre"].ToString();
-                                    //usuario.Apellido = dr["Apellido"].ToString();
-                                    //usuario.NombreUsuario = dr["nombreusuario"].ToString();
-                                    //usuario.Contrasena = dr["contraseña"].ToString();
-                                    //usuario.Mail = dr["mail"].ToString();
+
                                     listaNombre.Add(usuario);
                                 }
                             }
@@ -116,52 +115,49 @@ namespace SistemaGestionData
         #endregion
 
         #region Validar Usuario
-        //public static List<Usuario> ValidarUsuario(string user)
-        //{
-        //    Usuario usuario = new Usuario();
-        //    List<Usuario> listaNombre = new List<Usuario>();
+        public static bool ValidarUsuario(string user, string password)
+        {
+            bool existeUsuario = false;
 
-        //    string query = "Select id, nombre, apellido, nombreusuario, contraseña, mail From Usuario Where nombreusuario=@user";
+            //Usuario usuario = new Usuario();
+            //List<Usuario> listaNombre = new List<Usuario>();
 
-        //    try
-        //    {
-        //        using (SqlConnection conexion = new SqlConnection(connectionString))
-        //        {
-        //            conexion.Open();
+            string query = "Select 1 From Usuario " +
+                            "Where nombreusuario=@user COLLATE SQL_Latin1_General_CP1_CS_AS " +
+                            "and contraseña = @password COLLATE SQL_Latin1_General_CP1_CS_AS";
 
-        //            using (SqlCommand comando = new SqlCommand(query, conexion))
-        //            {
-        //                comando.Parameters.Add(new SqlParameter("nombreusuario", SqlDbType.VarChar) { Value = user });
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(connectionString))
+                {
+                    conexion.Open();
 
-        //                using (SqlDataReader dr = comando.ExecuteReader())
+                    using (SqlCommand comando = new SqlCommand(query, conexion))
+                    {
+                        comando.Parameters.Add(new SqlParameter("@user", SqlDbType.VarChar) { Value = user });
+                        comando.Parameters.Add(new SqlParameter("@password", SqlDbType.VarChar) { Value = password });
 
-        //                {
-        //                    if (dr.HasRows)
-        //                    {
-        //                        while (dr.Read())
-        //                        {
-        //                            //usuario.Id = Convert.ToInt32(dr["Id"]);
-        //                            usuario.Nombre = dr["Nombre"].ToString();
-        //                            //usuario.Apellido = dr["Apellido"].ToString();
-        //                            //usuario.NombreUsuario = dr["nombreusuario"].ToString();
-        //                            //usuario.Contrasena = dr["contraseña"].ToString();
-        //                            //usuario.Mail = dr["mail"].ToString();
-        //                            listaNombre.Add(usuario);
-        //                        }
-        //                    }
-        //                }
-        //            }
+                        using (SqlDataReader dr = comando.ExecuteReader())
 
-        //            // Opcional
-        //            conexion.Close();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return null;
-        //    }
-        //    return listaNombre;
-        //}
+                        {
+                            if (dr.HasRows)
+                            {
+                                existeUsuario = true;
+
+                            }
+                        }
+                    }
+
+                    // Opcional
+                    conexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                return existeUsuario;
+            }
+            return existeUsuario;
+        }
 
         #endregion
 

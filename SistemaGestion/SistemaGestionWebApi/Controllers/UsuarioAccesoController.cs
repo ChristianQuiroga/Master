@@ -10,7 +10,9 @@ namespace SistemaGestionWebApi.Controllers
     public class UsuarioAccesoController : ControllerBase
     {
         //GET
-        [HttpGet(Name = "ListarNombreUsuario")]
+        //[HttpGet(Name = "ListarNombreUsuario")]
+        [HttpGet]
+        [Route("ListarNombreUsuario")]
         public IEnumerable<Usuario> get(string user, string password)
         {
             return UsuarioBussiness.TraerNombre(user, password).ToArray();
@@ -18,11 +20,12 @@ namespace SistemaGestionWebApi.Controllers
         }
 
         //Get
-        //[HttpGet(Name ="ValidarUsuario")]
-        //public IEnumerable<Usuario> get(string user)
-        //{
-        //    return UsuarioBussiness.ValidarUsuario(user).ToArray();
-        //}
+        [HttpGet]
+        [Route("ValidarUsuario")]
+        public bool Get(string user, string password)
+        {
+            return UsuarioBussiness.ValidarUsuario(user, password);
+        }
 
         //Get nombre
         //[HttpGet(Name = "ListarNombreUsuario")]

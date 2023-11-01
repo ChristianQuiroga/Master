@@ -36,18 +36,11 @@ namespace SistemaGestionBussiness
         {
             return UsuarioData.TraerNombre(user, password);
         }
-
-        //nombreUsuario
-        //public static List<Usuario> ObtenerNombreUsuario(int Id)
-        //{
-        //    return UsuarioData.ObtenerNombreUsuario(Id);
-        //}
-
-
-        //public static List<Usuario> ValidarUsuario(string user)
-        //{
-        //    return UsuarioData.ValidarUsuario(user);
-        //}
+        //VALIDAR USUARIO
+        public static bool ValidarUsuario(string user, string password)
+        {
+            return UsuarioData.ValidarUsuario(user, password);
+        }
 
     }
 }
